@@ -133,3 +133,17 @@ import { FormsModule } from '@angular/forms';
       FormsModule
     ],
 ```
+## *ngFor
+목록을 통해 반복할때 마다 hero는 현재 hero 오브젝트를 가지고 있다.
+```aidl
+<li *ngFor="let hero of heroes">
+```
+
+## *ngIf
+selectedHero가 undefind일때는 노출안되고 selectedHero에 hero가 들러왔을때 display된다.
+```aidl
+<div *ngIf="selectedHero">
+```
+
+## [class.some-css-class]="some-condition"
+클래스 바인딩은 조건부를 사용하여 추가 삭제를 용이하게 한다.
